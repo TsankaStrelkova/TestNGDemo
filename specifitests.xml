@@ -1,0 +1,26 @@
+<suite name="Specific test">
+    <!-- It is testng.xml file that we can use to run specific methods from different classes. In this case we are going
+    to run methods createAccount (AccountManagement.java) and createContact (ContactManagement.java) -->
+    <test name="Create account">
+        <classes>
+            <class name="demo.tests.AccountManagement">
+                <!-- code to control specific methods execution within the class -->
+                <methods>
+                    <include name="createAccount"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Smoke test for contact">
+        <classes>
+            <class name="demo.tests.ContactManagement">
+                <!-- code to control specific methods execution within the class -->
+                <methods>
+                    <include name="createContact"></include>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>

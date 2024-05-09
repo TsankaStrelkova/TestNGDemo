@@ -1,0 +1,22 @@
+<suite name="All Test Suite">
+    <parameter name="n1" value="5"/>
+    <parameter name="n2" value="6"/>
+    <test name="multiplication">
+        <classes>
+            <class name="demo.tests.MultiplyNumbers">
+                <methods>
+                    <include name="multiply"/>
+                </methods>
+            </class>
+       </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="sum">
+    <classes>
+            <class name="demo.tests.SumNumbers">
+                <methods>
+                    <include name="addNumbers"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

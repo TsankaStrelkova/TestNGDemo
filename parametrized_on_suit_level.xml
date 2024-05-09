@@ -1,0 +1,20 @@
+<suite name="Parametrization on suite level" verbose="2" allow-return-values="true">
+    <parameter name="n1" value="6"/>
+    <parameter name="n2" value="5"/>
+<!-- It is testng.xml file that we can use to run specific methods from different classes. In this case we are going
+to run methods createAccount (AccountManagement.java) and createContact (ContactManagement.java) -->
+<test name="Multi">
+    <classes>
+        <class name="demo.tests.MultiplyNumbers">
+        </class>
+    </classes>
+</test>
+
+<test name="Sum">
+    <classes>
+        <class name="demo.tests.SumNumbers">
+        </class>
+    </classes>
+
+</test>
+</suite>
